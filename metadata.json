@@ -1,0 +1,7 @@
+{
+  "name": "UWorld Customer Support Hub",
+  "description": "A comprehensive FAQ and AI-powered support assistant for UWorld customers, featuring automated ticket generation for complex queries.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
