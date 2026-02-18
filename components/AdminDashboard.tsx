@@ -1,7 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
 import { SupportTicket, TicketStatus } from '../types';
-import { APP_THEME } from '../constants';
 
 interface AdminDashboardProps {
   tickets: SupportTicket[];
