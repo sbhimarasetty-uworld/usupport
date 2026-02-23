@@ -96,7 +96,7 @@ const App: React.FC = () => {
               If your question isn't covered in our knowledge base, our dedicated support team is available via email to assist you.
             </p>
             <div className="inline-block bg-blue-600 text-white px-12 py-5 rounded-2xl font-black shadow-xl">
-              Email: support@uworld.com
+              Raise a Ticket
             </div>
           </div>
         </section>
