@@ -178,7 +178,7 @@ const ChatWidget: React.FC<ChatWidgetProps> = ({ externalOpen, setExternalOpen, 
         <div className="bg-white w-[92vw] sm:w-[420px] h-[800px] max-h-[85vh] rounded-3xl md:rounded-[2.5rem] shadow-[0_30px_60px_-15px_rgba(0,0,0,0.25)] flex flex-col border border-slate-100 overflow-hidden animate-in fade-in zoom-in-95 slide-in-from-bottom-8 duration-300">
           
           {/* Professional Header */}
-          <div className="px-6 py-5 flex items-center justify-between text-white relative overflow-hidden" style={{ background: `linear-gradient(135deg, ${APP_THEME.primary} 0%, #003366 100%)` }}>
+          <div className="px-8 py-8 flex items-center justify-between text-white relative overflow-hidden" style={{ background: `linear-gradient(135deg, ${APP_THEME.primary} 0%, #003366 100%)` }}>
             <div className="absolute -right-4 -top-4 w-32 h-32 bg-white/5 rounded-full blur-2xl"></div>
             
             <div className="flex items-center space-x-4 z-10">
