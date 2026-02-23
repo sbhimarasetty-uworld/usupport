@@ -4,8 +4,8 @@ export enum CategoryType {
   SUBSCRIPTIONS = 'Subscriptions & Activation',
   CONTENT = 'Course Content & Reset',
   TECHNICAL = 'Technical & Troubleshooting',
-  MEDICAL = 'Medical (USMLE/MCAT)',
-  NURSING = 'Nursing (NCLEX)',
+  REFUNDS = 'Refunds',
+  LOGIN = 'Logins & Passwords',
   LEGAL = 'Legal (Bar Prep)',
   FINANCE = 'Finance (CFA/CPA/CMA)',
   GENERAL = 'General Support'
@@ -16,6 +16,13 @@ export interface FAQItem {
   category: CategoryType;
   question: string;
   answer: string;
+}
+
+export interface DummyUser {
+  email: string;
+  orderId: string;
+  purchaseDate: string;
+  product: string;
 }
 
 export interface ChatMessage {

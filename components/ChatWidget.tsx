@@ -225,10 +225,10 @@ const ChatWidget: React.FC<ChatWidgetProps> = ({ externalOpen, setExternalOpen, 
                 
                 <div className="space-y-3">
                   {[
-                    { icon: 'book-open', label: 'Browse Medical Products', query: 'Show me all Medical exam products.' },
-                    { icon: 'graduation-cap', label: 'Nursing Exam Info', query: 'Tell me about Nursing/NCLEX exam prep.' },
+                    { icon: 'money-bill-transfer', label: 'Refund Request', query: 'I would like to request a refund.' },
+                    { icon: 'key', label: 'Logins & Passwords', query: 'I am having trouble logging in or need to reset my password.' },
                     { icon: 'user-gear', label: 'Account Activation', query: 'How do I activate my new subscription?' },
-                    { icon: 'shield-halved', label: 'Terms & Security', query: 'What is your refund policy?' }
+                    { icon: 'shield-halved', label: 'Terms & Security', query: 'Tell me about your terms of service and data security.' }
                   ].map((item, i) => (
                     <button 
                       key={i} 

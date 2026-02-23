@@ -43,7 +43,7 @@ const FAQList: React.FC<FAQListProps> = ({ onNoResults }) => {
           ></i>
           <input 
             type="text" 
-            placeholder="Search FAQs (e.g., NCLEX, reset subscription...)" 
+            placeholder="Search FAQs (e.g., refunds, reset password...)" 
             className="w-full pl-12 pr-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition outline-none shadow-sm"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}

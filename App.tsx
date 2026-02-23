@@ -133,10 +133,10 @@ const App: React.FC = () => {
           <div className="flex flex-col md:flex-row justify-between items-center gap-8">
             <p className="text-gray-500 text-xs font-bold uppercase tracking-widest">© 2025 UWorld, LLC. Global Leaders in Education.</p>
             <div className="flex space-x-6 text-2xl">
-              <a href="https://www.facebook.com/uworldnursing/" className="text-gray-600 hover:text-white transition-all transform hover:-translate-y-1"><i className="fab fa-facebook"></i></a>
-              <a href="https://twitter.com/Uworldnursing" className="text-gray-600 hover:text-white transition-all transform hover:-translate-y-1"><i className="fab fa-twitter"></i></a>
-              <a href="https://www.instagram.com/uworldnursing" className="text-gray-600 hover:text-white transition-all transform hover:-translate-y-1"><i className="fab fa-instagram"></i></a>
-              <a href="https://www.youtube.com/channel/UCQbHTnFCDtpYgJYboFOks1Q" className="text-gray-600 hover:text-white transition-all transform hover:-translate-y-1"><i className="fab fa-youtube"></i></a>
+              <a href="https://www.facebook.com/UWorld/" className="text-gray-600 hover:text-white transition-all transform hover:-translate-y-1"><i className="fab fa-facebook"></i></a>
+              <a href="https://twitter.com/UWorld" className="text-gray-600 hover:text-white transition-all transform hover:-translate-y-1"><i className="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/uworld" className="text-gray-600 hover:text-white transition-all transform hover:-translate-y-1"><i className="fab fa-instagram"></i></a>
+              <a href="https://www.youtube.com/UWorld" className="text-gray-600 hover:text-white transition-all transform hover:-translate-y-1"><i className="fab fa-youtube"></i></a>
             </div>
           </div>
         </div>

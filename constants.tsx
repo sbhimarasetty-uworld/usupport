@@ -1,5 +1,38 @@
 
-import { CategoryType, FAQItem } from './types';
+import { CategoryType, FAQItem, DummyUser } from './types';
+
+export const DUMMY_USERS: DummyUser[] = [
+  {
+    email: "john.doe@example.com",
+    orderId: "UW-12345",
+    purchaseDate: "2026-02-20",
+    product: "MBE QBank"
+  },
+  {
+    email: "jane.smith@example.com",
+    orderId: "UW-67890",
+    purchaseDate: "2026-02-10",
+    product: "CFA Level 1"
+  },
+  {
+    email: "mike.jones@example.com",
+    orderId: "UW-11223",
+    purchaseDate: "2026-02-21",
+    product: "MCAT Prep"
+  },
+  {
+    email: "sarah.wilson@example.com",
+    orderId: "UW-44556",
+    purchaseDate: "2025-12-01",
+    product: "SAT Course"
+  },
+  {
+    email: "alex.brown@example.com",
+    orderId: "UW-77889",
+    purchaseDate: "2026-01-15",
+    product: "CPA Review"
+  }
+];
 
 export const FAQ_DATABASE: FAQItem[] = [
   // PAYMENT & BILLING
@@ -17,9 +50,15 @@ export const FAQ_DATABASE: FAQItem[] = [
   },
   {
     id: 'pay-3',
-    category: CategoryType.PAYMENT,
+    category: CategoryType.REFUNDS,
     question: "What is your refund policy?",
     answer: "Refunds are evaluated case-by-case. Generally, Course or QBank purchases can be refunded within 1-week of activation if no more than 10% of the content has been used. A 10% cancellation fee applies to all refunded amounts."
+  },
+  {
+    id: 'pay-6',
+    category: CategoryType.REFUNDS,
+    question: "How long does it take to receive my refund?",
+    answer: "Once approved, refunds are typically processed within 3-5 business days. However, it may take up to 10 business days for the credit to appear on your bank statement depending on your financial institution."
   },
   {
     id: 'pay-4',
@@ -130,31 +169,7 @@ export const FAQ_DATABASE: FAQItem[] = [
     answer: "No, you can only be logged into one device at a time. Logging into a second device will automatically log you out of the first one."
   },
 
-  // PRODUCT SPECIFIC (MEDICAL, NURSING, LEGAL, etc.)
-  {
-    id: 'med-1',
-    category: CategoryType.MEDICAL,
-    question: "Does the USMLE Step 1 QBank cover the new pass/fail format?",
-    answer: "Yes, our Step 1 QBank is fully updated to reflect the current pass/fail testing environment, focusing on foundational knowledge and integrated concepts."
-  },
-  {
-    id: 'med-2',
-    category: CategoryType.MEDICAL,
-    question: "How do the Self-Assessments work for USMLE?",
-    answer: "UWorld Self-Assessments consist of 4 blocks of 40 questions. They provide a score report and an estimated 3-digit score to help you gauge your exam readiness."
-  },
-  {
-    id: 'nur-1',
-    category: CategoryType.NURSING,
-    question: "Are Next Generation NCLEX (NGN) questions included?",
-    answer: "Absolutely. Our NCLEX-RN and NCLEX-PN banks include NGN item types like case studies, bow-ties, and trend questions to prepare you for the current exam format."
-  },
-  {
-    id: 'nur-2',
-    category: CategoryType.NURSING,
-    question: "What is a passing 'readiness' score for NCLEX?",
-    answer: "While there is no official passing score, achieving a 'Very High' or 'High' chance of passing on our Self-Assessment exams is a strong indicator of readiness."
-  },
+  // PRODUCT SPECIFIC (LEGAL, FINANCE, etc.)
   {
     id: 'leg-1',
     category: CategoryType.LEGAL,
@@ -177,9 +192,15 @@ export const FAQ_DATABASE: FAQItem[] = [
   },
   {
     id: 'gen-2',
-    category: CategoryType.GENERAL,
+    category: CategoryType.LOGIN,
     question: "What should I do if I forgot my password?",
     answer: "On the login page, click the 'Forgot Password' link. Enter your registered email address, and we will send you a secure link to reset your password."
+  },
+  {
+    id: 'gen-5',
+    category: CategoryType.LOGIN,
+    question: "Can I change my username?",
+    answer: "Your username is typically your registered email address. If you need to change the email address associated with your account, please contact support@uworld.com for assistance."
   },
   {
     id: 'gen-3',
@@ -196,14 +217,6 @@ export const FAQ_DATABASE: FAQItem[] = [
 ];
 
 export const PRODUCT_DIRECTORY = {
-  "Medical": {
-    "url": "https://medical.uworld.com",
-    "products": ["USMLE Step 1", "Step 2 CK", "Step 3", "ABIM", "ABFM", "PANCE", "UKMLA AKT"]
-  },
-  "Nursing": {
-    "url": "https://nursing.uworld.com",
-    "products": ["NCLEX-RN", "NCLEX-PN", "FNP", "Clinical Med Math"]
-  },
   "Legal": {
     "url": "https://legal.uworld.com",
     "products": ["MBE", "Themis Bar Review"]
