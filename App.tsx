@@ -95,9 +95,12 @@ const App: React.FC = () => {
             <p className="text-gray-500 mb-10 max-w-2xl mx-auto text-lg font-medium leading-relaxed">
               If your question isn't covered in our knowledge base, our dedicated support team is available via email to assist you.
             </p>
-            <div className="inline-block bg-blue-600 text-white px-12 py-5 rounded-2xl font-black shadow-xl">
+            <a 
+              href="mailto:support@uworld.com"
+              className="inline-block bg-blue-600 text-white px-12 py-5 rounded-2xl font-black shadow-xl hover:bg-blue-700 transition transform hover:-translate-y-1 active:translate-y-0"
+            >
               Email: support@uworld.com
-            </div>
+            </a>
           </div>
         </section>
       </main>
