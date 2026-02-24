@@ -97,3 +97,25 @@ export async function analyzeTicketPriority(subject: string, description: string
     return 'medium';
   }
 }
+
+export async function getQuickAnswer(query: string): Promise<string> {
+  const apiKey = process.env.API_KEY;
+  if (!apiKey) return "I'm sorry, I cannot provide an answer at the moment.";
+
+  try {
+    const ai = new GoogleGenAI({ apiKey });
+    const response = await ai.models.generateContent({
+      model: 'gemini-3-flash-preview',
+      contents: [{ role: 'user', parts: [{ text: `Provide a very concise (max 2 sentences) answer to this question about UWorld support: "${query}". Use the following context if relevant: ${JSON.stringify(FAQ_DATABASE)}` }] }],
+      config: {
+        temperature: 0.3,
+        systemInstruction: "You are a concise support assistant. Provide direct answers based on UWorld knowledge."
+      },
+    });
+
+    return response.text || "I couldn't find a specific answer. Please try our assistant for more help.";
+  } catch (error) {
+    console.error("Quick Answer Error:", error);
+    return "I encountered an error while searching. Please try our assistant.";
+  }
+}
